@@ -18,9 +18,8 @@ cc nob.c -o nob
 
 * My Resume
 
-#+CAPTION: Mae Brooks' Resume
-#+NAME:   fig:Resume
-[[./Mae Brooks Resume.pdf]]
+![Mae Brooks' Resume](./Mae\ Brooks\ Resume.pdf)
+
 
 * Special Thanks
 
