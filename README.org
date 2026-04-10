@@ -18,7 +18,8 @@ cc nob.c -o nob
 
 * My Resume
 
-![Mae Brooks' Resume](./Mae\ Brooks\ Resume.pdf)
+[[./Mae Brooks Resume.pdf][My Resume]]
+[[./Mae Brooks Resume.png]]
 
 
 * Special Thanks

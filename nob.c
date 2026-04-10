@@ -43,5 +43,13 @@ int main(int argc, char** argv) {
     return 1;
   }
 
+  cmd_append(&cmd,
+	     "gs", "-sDEVICE=png16m", "-dTextAlphaBits=4", "-r300",
+	     "-o", "Mae Brooks Resume.png", "Mae Brooks Resume.pdf");
+  if (!cmd_run(&cmd)) {
+    nob_log(NOB_ERROR, "%s", "Failed to create png of resume");
+    return 1;
+  }
+
   return 0;
 }
