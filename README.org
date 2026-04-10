@@ -1,3 +1,8 @@
+* My Resume [[./Mae Brooks Resume.pdf][File Link]]
+
+Preview Image:
+[[./Mae Brooks Resume.png]]
+
 * Hello! This is my latex setup for my resume!
 
 ** Requirements:
@@ -11,18 +16,9 @@
 cc nob.c -o nob
 #+END_SRC
 
-**Re-running `nob` will cause it to rebuild on changes**
-```sh
+#+BEGIN_SRC bash
 ./nob
-```
-
-* My Resume
-
-[[./Mae Brooks Resume.pdf][Resume File Link]]
-
-Preview Image:
-[[./Mae Brooks Resume.png]]
-
+#+END_SRC
 
 * Special Thanks
 
