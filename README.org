@@ -1,6 +1,6 @@
 * My Resume [[./Mae Brooks Resume.pdf][File Link]]
 
-Preview Image:
+#+CAPTION: Preview of Mae's Resume
 [[./Mae Brooks Resume.png]]
 
 * Hello! This is my latex setup for my resume!
