@@ -18,7 +18,9 @@ cc nob.c -o nob
 
 * My Resume
 
-[[./Mae Brooks Resume.pdf][My Resume]]
+[[./Mae Brooks Resume.pdf][Resume File Link]]
+
+Preview Image:
 [[./Mae Brooks Resume.png]]
 
 
