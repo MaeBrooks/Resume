@@ -1,0 +1,221 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.4 (Nov/17/2025)
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% v1.3 author:
+% Zachary Taylor
+%
+% v1.3 repository:
+% https://github.com/ZDTaylor/Deedy-Resume-Reversed
+%
+% v1.4 author:
+% Mae Brooks
+%
+% v1.4 repository:
+% https://github.com/MaeBrooks/Resume
+%
+% IMPORTANT:
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ExplSyntaxOn
+\NewDocumentCommand{\cvtag}{ m }{%
+    \str_if_eq:noTF { #1 } { \tl_to_str:n {~{{~skill0~}}~} } {} {
+        \tikz[baseline]\node[anchor=base, draw=blue!30, rounded~corners, inner~xsep=1ex, inner~ysep=0.75ex, text~height=1.5ex, text~depth=.25ex]{#1};
+    }%
+}
+\ExplSyntaxOff
+
+\newcommand{\sectiontitlespacer}{\vspace{2}}
+
+\documentclass[]{resume-class}
+\usepackage{fancyhdr}
+\usepackage{changepage}
+\usepackage{tikz}
+\nonstopmode{}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\begin{document}
+
+\namesection{Mae Brooks}{
+  \href{mailto:home_in_the_rain+developer@proton.me}{home\_in\_the\_rain+developer@proton.me} | \href{tel:3868872770}{385-887-2770}
+
+  \vspace{3}
+
+  \begin{adjustwidth}{6em}{6em}
+    \center{
+      \footnotesize{Software Engineer with 6 years of experience building scalable web applications and internal tools from the ground-up, growing alongside coworkers, and exceeding expectations.}
+    }
+  \end{adjustwidth}
+}
+
+\vspace{8}
+
+\begin{minipage}[t]{0.60\textwidth}
+
+\section{Experience}
+\sectiontitlespacer
+\runsubsection{7 Factor LLC}
+\descript{| Software Engineer II }
+\location{May 2022 – Present | Atlanta, GA}
+\vspace{\topsep}
+\begin{tightemize}
+\item{Leveraged Test Driven Development (TDD) to increase test coverage scores by 134\% across multiple clients.}
+\item{Lead development efforts towards web accessiblity, resulting in a 79\% reduction in accessiblity errors.}
+\item{Optimized build \& test scripts — \bold{Shaving 10,000+ minutes off of pipeline costs}, and reducing Largest contentful pain (LCP) by 2.3 seconds.}
+\item{Increased fellow developer satisfaction as an elected as member of the developer experience team.}
+\item{Reduced core application load time by 2 seconds by }
+\item{Identified and resolved dependency issues, eliminating critical vulnerabilities}
+\item{Partnered with other team leads to ship incremental releases, delivering web features on a bi-weekly cadence.}
+\item{Collaborated with teams across multiple companies to conduct Agile, Kanban, and Scrum meetings.}     
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Service Robotics \& Technologies}
+\descript{| Developer II}
+\location{June 2020 – March 2022 | Nov Springfield, VA}
+\begin{tightemize}
+  \item{Engineered Phase II SBIR implementation to completion, resulting in an additional contract.}
+  \item{Wrote deployment \& reporting scripts, \bold{reducing required onsite developer time from 5 days to 2}.}
+  \item{Developed product for locating, controlling, and interfacing with devices in real time.}
+  \item{Utlized Bitbucket Pipelines to host micro services in Azure.}
+  \item{Generated documents and scripts for technical on—boarding.}
+  \item{Protected privileged access to devices by leveraging Keycloak IAM.}
+  \item{Completed stories alongside coworkers in an Agile environment.}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Neddaxs}
+\descript{| Lead Developer}
+\location{August 2020 - October 2022}
+\begin{tightemize}
+  \item{Designed, developed, and hosted web apps.}
+  \item{Raised 90k in revenue.}
+  \item{Hired and tutored two part time developers.}
+  \item{Met \& communicated with clients.}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{TxAnalytics}
+\descript{| Developer I}
+\location{July 2019 – June 2020 | Lehi, UT}
+\begin{tightemize}
+\item{Used Golang and React to allow users access to custom generated data reports.}
+\item{Developed a database driver for a custom proprietary database utilizing TLS communication.}
+\item{Increased customers sales by identifying key marketable attributes.}
+\end{tightemize}
+\sectionsep
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.33\textwidth}
+
+\section{Skills}
+\sectiontitlespacer
+
+\subsection{Programming}{
+  \vspace{2}
+
+  \cvtag{TypeScript/JavaScript}
+  \cvtag{HTML/(S)CSS/}
+  \cvtag{C}
+  \cvtag{Go/Golang}
+  \cvtag{Java}
+  \cvtag{Rust}
+  \cvtag{Lisp}
+  \cvtag{PHP}
+  \cvtag{SQL}
+  \cvtag{NoSQL}
+  \cvtag{RESTful API's}
+  \cvtag{LaTeX}
+}
+
+\vspace{\topsep}
+\subsection{Technology}
+\vspace{2}
+\cvtag{Angular}
+\cvtag{ReactJS}
+\cvtag{Vue}
+\cvtag{Docker/Compose}
+\cvtag{K8/Kubernetes}
+\cvtag{PostgreSQL}
+\cvtag{Cassandra}
+\cvtag{MongoDB}
+\cvtag{Bash/ZSH}
+\cvtag{Gin}
+\cvtag{WebGL \& Canvas}
+\cvtag{GCP}
+\cvtag{AWS}
+\cvtag{D3JS}
+\cvtag{NodeJS}
+\cvtag{Typescript}
+\cvtag{NPM}
+\cvtag{Github Hooks}
+
+\vspace{6}
+
+\sectionsep
+
+\section{Interests}
+\sectiontitlespacer
+\large{\textbf{Programming}} \\
+\vspace{3}
+Linux, Scripting, \& Learning
+\vspace{2}
+
+\large{\textbf{Volunteer Work}} \\
+\vspace{3}
+Food Pantry Volunteer
+\vspace{2}
+
+\large{\textbf{Reading}} \\
+\vspace{3}
+History, Sci—Fi, Documentation
+
+\section{Projects}
+\sectiontitlespacer
+\runsubsection{Gren Lang}
+\descript{| Tree-Sitter, Neovim, \& Emacs Maintainer}
+\location{Jan 2023 – April 2026}
+\vspace{\topsep}
+\vspace{2}
+\begin{tightemize}
+  \item{Created and Maintained respective plugins for the Neovim \& Emacs text editors} 
+  \item{Used Tree-Sitter to create a custom grammar}
+  \item{Resolved bugs and issues brought up using Github issues}
+\end{tightemize}
+
+\section{Links}
+\sectiontitlespacer
+\vspace{4}
+\begin{tightemize}
+  \item{\href{https://github.com/MaeBrooks}{Github://MaeBrooks}}
+  \item{\href{https://github.com/Maemacs}{Github://Maemacs}}
+  \item{\href{https://www.linkedin.com/}{LinkedIn://MaeBrooks}}
+\end{tightemize}
+
+\end{minipage}
+\end{document}
+% \documentclass[]{article}

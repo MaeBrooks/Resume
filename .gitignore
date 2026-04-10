@@ -1,0 +1,10 @@
+nob
+nob.old
+nob.log
+packages/
+resume.aux
+resume.log
+resume.out
+resume.pdf
+.DS_Store
+fonts/*
