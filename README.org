@@ -18,7 +18,9 @@ cc nob.c -o nob
 
 * My Resume
 
-<img src="./Mae Brooks Resume.pdf" rel="Mae Brook's resume">
+#+CAPTION: Mae Brooks' Resume
+#+NAME:   fig:Resume
+[[./Mae Brooks Resume.pdf]]
 
 * Special Thanks
 
